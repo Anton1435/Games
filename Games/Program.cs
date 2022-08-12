@@ -1,9 +1,19 @@
-﻿class Program
+﻿using System;
+class Program
 {
+    static void SelectRace()
+    {
+        string[] namesRace = {"Люди", "Эльфы", "Орки","Гоблины", "Гномы"};
+        for (int i = 0; i < namesRace.Length -1; i++)
+        {
+            Console.Write(i+1 + " - " + namesRace[i] + ", ");
+        }
+        Console.WriteLine(namesRace.Length + " - " + namesRace[namesRace.Length-1] + ". ");
+    }
     static void Main(string[]arg)
     {
-       int[] numbers = {1,3,4,54,54,35}; //int[] numbers = new int [4];
-       int len = numbers.Length;
+     
+      SelectRace();
 
     }
 }
