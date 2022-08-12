@@ -9,6 +9,9 @@ class Program
             Console.Write(i+1 + " - " + namesRace[i] + ", ");
         }
         Console.WriteLine(namesRace.Length + " - " + namesRace[namesRace.Length-1] + ". ");
+        Console.WriteLine("Выберите вашу расу? ");
+        int numberRase = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Ваша раса: " + namesRace[ numberRase-1]);
     }
     static void Main(string[]arg)
     {
